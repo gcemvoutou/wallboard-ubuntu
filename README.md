@@ -36,7 +36,7 @@ Le but du projet est d’installer un wallboard permettant d’afficher en perma
 <img src="images/wallboard.jpeg" width="70%">
 
 ## Schéma technique
-<img src="images/schema.png" width="70%">
+<img src="images/schema.png" width="80%">
 
 ## Documentation détaillée
 
