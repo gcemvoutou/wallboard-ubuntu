@@ -26,12 +26,13 @@
 - Accès SSH pour la maintenance à distance
 
 > [!NOTE]
- > **Choix du système d’exploitation :**
-> 
- > Nous avons choisi Ubuntu Desktop 24.04 LTS pour le Dell OptiPlex.
- > Ce choix s’explique principalement par le fait que la version Desktop est plus simple à configurer pour un poste destiné à afficher une interface graphique avec Chromium.
+> **Choix du système d'exploitation :**
 >
-> La version LTS (Long Term Support) permet également  > de bénéficier de mises à jour et d’un support sur une longue durée, ce qui est adapté à une machine destinée à fonctionner en continu.
+> Ubuntu Desktop 24.04 LTS a été retenu pour le Dell OptiPlex, conformément au cahier des charges qui imposait une distinction claire avec le serveur CheckMK existant, lui-même sous Ubuntu Server.
+>
+> Ce choix a aussi simplifié la mise en œuvre du mode kiosque : GNOME fournit nativement un environnement graphique complet et un autologin, sans avoir à construire manuellement une pile d'affichage minimale (Xorg + gestionnaire de fenêtres), comme cela aurait été nécessaire sous Ubuntu Server.
+>
+> La version LTS (Long Term Support) garantit par ailleurs des mises à jour et un support sur une longue durée, adaptés à une machine destinée à fonctionner en continu.
 
 ---
 
