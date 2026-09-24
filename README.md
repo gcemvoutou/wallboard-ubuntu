@@ -28,7 +28,7 @@ Le but du projet est d’installer un wallboard permettant d’afficher en perma
 
 ## Résultat
 
-[À COMPLÉTER — photo finale du wallboard installé au bureau]
+<img src="images/wallboard.jpeg" width="50%">
 
 ## Documentation détaillée
 
