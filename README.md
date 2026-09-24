@@ -14,7 +14,7 @@ Le but du projet est d’installer un wallboard permettant d’afficher en perma
 
 | Élément | Choix |
 |---|---|
-| Matériel | Dell OptiPlex 3040 |
+| Matériel | Dell OptiPlex 3020 |
 | Système | Ubuntu Desktop 24.04 LTS |
 | Navigateur | Chromium (Snap), en mode kiosque |
 | Résilience logicielle | Script watchdog maison (surveillance + relance auto) |
