@@ -25,7 +25,8 @@
 - Mode kiosque strict : plein écran, pas de barre d'adresse, pas de curseur visible
 - Accès SSH pour la maintenance à distance
 
-**Choix du système d’exploitation :** 
+[!NOTE]
+Choix du système d’exploitation
 
 Nous avons choisi Ubuntu Desktop 24.04 LTS pour le Dell OptiPlex.
 
