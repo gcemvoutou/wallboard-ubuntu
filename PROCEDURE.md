@@ -25,7 +25,11 @@
 - Mode kiosque strict : plein écran, pas de barre d'adresse, pas de curseur visible
 - Accès SSH pour la maintenance à distance
 
-**Choix initial vs choix final :** le cahier des charges prévoyait initialement Ubuntu Server + Xorg/Openbox (environnement minimal). En cours de projet, la direction a demandé de basculer sur **Ubuntu Desktop**, pour rester distinct du serveur CheckMK déjà en place sous Ubuntu Server. On a donc adapté l'architecture : GNOME complet + autologin, plutôt qu'un environnement graphique allégé — un compromis pertinent puisque la machine dispose de suffisamment de ressources (8 Go de RAM) pour absorber GNOME sans impact sur l'usage kiosque.
+**Choix du système d’exploitation :** 
+
+Nous avons choisi Ubuntu Desktop 24.04 LTS pour le Dell OptiPlex.
+
+Ce choix s’explique principalement par le fait que la version Desktop est plus simple à configurer pour un poste destiné à afficher une interface graphique avec Chromium. La version LTS (Long Term Support) permet également de bénéficier de mises à jour et d’un support sur une longue durée, ce qui est adapté à une machine destinée à fonctionner en continu.
 
 ---
 
