@@ -26,7 +26,8 @@
 - Accès SSH pour la maintenance à distance
 
 > [!NOTE]
- > Choix du système d’exploitation
+ > ** Choix du système d’exploitation : **
+> 
  > Nous avons choisi Ubuntu Desktop 24.04 LTS pour le Dell OptiPlex.
  > Ce choix s’explique principalement par le fait que la version Desktop est plus simple à configurer pour un poste destiné à afficher une interface graphique avec Chromium. La version LTS (Long Term Support) permet également  > de bénéficier de mises à jour et d’un support sur une longue durée, ce qui est adapté à une machine destinée à fonctionner en continu.
 
