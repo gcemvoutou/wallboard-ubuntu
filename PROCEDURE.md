@@ -28,9 +28,7 @@
 > [!NOTE]
 > **Choix du système d'exploitation :**
 >
-> Ubuntu Desktop 24.04 LTS a été retenu pour le Dell OptiPlex, conformément au cahier des charges qui imposait une distinction claire avec le serveur CheckMK existant, lui-même sous Ubuntu Server.
->
-> Ce choix a aussi simplifié la mise en œuvre du mode kiosque : GNOME fournit nativement un environnement graphique complet et un autologin, sans avoir à construire manuellement une pile d'affichage minimale (Xorg + gestionnaire de fenêtres), comme cela aurait été nécessaire sous Ubuntu Server.
+> Ubuntu Desktop 24.04 LTS a été retenu pour simplifié la mise en œuvre du mode kiosque : GNOME fournit nativement un environnement graphique complet et un autologin, sans avoir à construire manuellement une pile d'affichage minimale, comme cela aurait été nécessaire sous Ubuntu Server.
 >
 > La version LTS (Long Term Support) garantit par ailleurs des mises à jour et un support sur une longue durée, adaptés à une machine destinée à fonctionner en continu.
 
