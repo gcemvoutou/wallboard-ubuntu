@@ -23,8 +23,13 @@ Le but du projet est d’installer un wallboard permettant d’afficher en perma
 
 ## Ce que j'ai appris sur ce projet
 
-- Diagnostiquer un blocage TLS causé par l'inspection SSL d'un pare-feu d'entreprise (import d'un certificat racine sur le système)
-- Configurer une machine en IP fixe, et diagnostiquer un conflit d'adresses résiduel après la bascule DHCP → IP fixe
+- Configurer une machine Linux sous Ubuntu Desktop LTS à partir d’un Dell OptiPlex pour en faire un wallboard dédié.
+- Configurer Chromium en mode kiosque pour afficher automatiquement le dashboard Checkmk en plein écran au démarrage.
+- Mettre en place un démarrage automatique et désactiver la veille et le verrouillage afin de maintenir l’affichage en permanence.
+- Configurer un script watchdog .
+- Configurer l’accès à distance en SSH et une adresse IP fixe pour administrer la machine.
+- Configurer la machine pour redémarrer automatiquement après une coupure de courant grâce à l’AC Recovery du BIOS.
+- Diagnostiquer différents problèmes d’affichage et de connexion afin d’assurer le fonctionnement continu du wallboard.
 
 ## Résultat
 
