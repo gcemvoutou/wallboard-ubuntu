@@ -24,9 +24,7 @@ Le but du projet est d’installer un wallboard permettant d’afficher en perma
 ## Ce que j'ai appris sur ce projet
 
 - Diagnostiquer un blocage TLS causé par l'inspection SSL d'un pare-feu d'entreprise (import d'un certificat racine sur le système)
-- Adapter une architecture initialement pensée pour Ubuntu Server (Xorg + Openbox minimal) vers Ubuntu Desktop (GNOME complet + autologin), suite à une contrainte imposée en cours de projet
-- Configurer une machine en IP fixe en coordination avec l'administrateur réseau, et diagnostiquer un conflit d'adresses résiduel après la bascule DHCP → IP fixe
-- Comprendre et résoudre un problème d'affichage lié à la négociation EDID entre le PC et l'écran (détaillé dans `PROCEDURE.md`)
+- Configurer une machine en IP fixe, et diagnostiquer un conflit d'adresses résiduel après la bascule DHCP → IP fixe
 
 ## Résultat
 
