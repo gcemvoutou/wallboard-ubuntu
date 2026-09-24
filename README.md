@@ -2,7 +2,7 @@
 
 ## Contexte
 
-Dans le cadre de mon alternance BTS SIO SISR au sein de la Direction des Systèmes d'Information d'une mairie, on m'a confié la transformation d'une TV inutilisée en panneau d'affichage permanent (« wallboard ») du dashboard CheckMK, pour rendre visible en continu l'état de la supervision des équipements réseau.
+Le but du projet est d’installer un wallboard permettant d’afficher en permanence notre logiciel de monitoring Checkmk dans le bureau du Desk, afin que la personne présente puisse surveiller facilement l’état des équipements et détecter rapidement d’éventuels problèmes.
 
 ## Objectif
 
