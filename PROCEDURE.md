@@ -109,7 +109,7 @@ MemoryMax=1.5G
 [Install]
 WantedBy=graphical-session.target
 ```
-> **Note :**
+> [!NOTE]
 > 
 > - **`Description`** : donne un nom au service.
 > - **`After=graphical-session.target`** : attend que la session graphique soit démarrée avant de lancer Chromium.
