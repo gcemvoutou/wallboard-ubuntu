@@ -1,0 +1,12 @@
+[Unit]
+Description=Wallboard CheckMK Chromium Kiosk
+After=graphical-session.target
+
+[Service]
+ExecStart=%h/chromium-wallboard.sh
+Restart=always
+RestartSec=5
+MemoryMax=1.5G
+
+[Install]
+WantedBy=graphical-session.target
