@@ -6,7 +6,7 @@ Documentation technique et fichiers de configuration d'un wallboard de supervisi
 
 ---
 
-## 📋 Présentation du Projet
+##  Présentation du Projet
 
 * **Objectif :** Afficher en continu et de manière autonome l'état de supervision des équipements réseau sur un écran mural.
 * **Matériel :** PC Dell OptiPlex (Nom d'hôte : `wallboard-desk`, IP : `203.0.113.38`).
@@ -23,7 +23,7 @@ Documentation technique et fichiers de configuration d'un wallboard de supervisi
 
 ---
 
-## ⚙️ Stack Technique
+##  Stack Technique
 
 - **Gestionnaire de connexion :** GDM3 configuré avec `AutomaticLogin` sur une session **X11** (plutôt que Wayland), choix retenu pour fiabiliser l'autologin et éviter les invites de trousseau de clés interactives.
 - **Supervision des processus :** Service utilisateur systemd (`chromium-wallboard.service`), avec relance automatique (`Restart=always`) et une limite stricte de consommation mémoire (`MemoryMax=1.5G`) — une supervision native du processus, plus robuste qu'un script de surveillance externe, et qui protège la machine de toute dérive mémoire sur le long terme.
@@ -45,7 +45,7 @@ Documentation technique et fichiers de configuration d'un wallboard de supervisi
 
 ---
 
-## 🚀 Guide de Déploiement Rapide
+##  Guide de Déploiement Rapide
 
 1. **Copier les fichiers** sur la machine cible dans le répertoire de l'utilisateur `checkmk-kiosk`.
 2. **Configurer l'authentification automatique** dans `/etc/gdm3/custom.conf`.
@@ -56,16 +56,16 @@ Documentation technique et fichiers de configuration d'un wallboard de supervisi
    ```
 4. **Redémarrer le poste** pour valider le démarrage à froid et l'affichage automatique du kiosque.
 
-*Pour consulter la procédure détaillée pas à pas, référez-vous au fichier [procedure.md](./procedure.md).*
+*Pour consulter la procédure détaillée pas à pas, référez-vous au fichier [procedure.md](./PROCEDURE.md).*
 
 ---
 
-## 🔎 Points techniques notables
+##  Points techniques notables
 
 - **Certificat racine d'entreprise :** le pare-feu effectuant une inspection SSL sur le trafic sortant, l'installation de Chromium (via le Snap Store) nécessite l'import préalable du certificat racine de l'organisation dans le magasin de confiance système.
 - **IP fixe :** configuration réseau statique via `nmcli`, en coordination avec l'administration réseau, pour garantir une adresse stable au fil des redémarrages.
 - **Compte de supervision dédié :** droits limités à la lecture seule, avec délai d'inactivité désactivé spécifiquement pour ce compte (sans impact sur les autres utilisateurs CheckMK).
 
-## 🖼️ Résultat
+##  Résultat
 
-<img src="./images/wallboard.jpeg" alt="Photo wallboard en prod" width="45%">
+<img src="./images/wallboard.jpeg" alt="Photo wallboard en prod" width="50%">
