@@ -9,6 +9,7 @@
 ## 1. Présentation générale
 
 Ce document décrit l'architecture technique du wallboard de supervision CheckMK. Le système démarre de manière entièrement autonome, contourne l'authentification interactive, et maintient l'affichage du tableau de bord en mode kiosque plein écran de façon résiliente.
+<img src="./images/schema_wallboard.png" alt="Schema wallboard" width="70%">
 
 ---
 
