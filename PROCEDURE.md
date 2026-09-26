@@ -93,7 +93,7 @@ exec chromium --kiosk --no-first-run --disable-infobars http://203.0.113.21/moni
 *(L'utilisation de la commande `exec` permet de remplacer le processus du shell par celui du navigateur pour une gestion propre par systemd).*
 
 ### 5.3. Service Systemd Utilisateur (`~/.config/systemd/user/chromium-wallboard.service`)
-Créé pour superviser et relancer l'application de manière intégrée :
+Le service Systemd permet de lancer et de surveiller automatiquement Chromium dans la session graphique de l'utilisateur.
 
 ```ini
 [Unit]
@@ -115,6 +115,14 @@ Commandes d'activation du service :
 systemctl --user daemon-reload
 systemctl --user enable chromium-wallboard.service
 ```
+À quoi servent les principales lignes ?
+- Description : donne un nom au service.
+- After=graphical-session.target : attend que la session graphique soit démarrée avant de lancer Chromium.
+- ExecStart : lance le script chromium-wallboard.sh, qui démarre Chromium en mode kiosque.
+- Restart=always : relance automatiquement Chromium s'il se ferme ou plante.
+- RestartSec=5 : attend 5 secondes avant de relancer Chromium.
+- MemoryMax=1.5G : limite la mémoire utilisée par le service à 1,5 Go.
+- WantedBy=graphical-session.target : permet au service de démarrer automatiquement avec la session graphique.
 
 ### 5.4. Connexion persistante au compte de supervision
 
