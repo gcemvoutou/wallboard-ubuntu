@@ -1,6 +1,6 @@
 # 🖥️ Wallboard de Supervision CheckMK (Dell OptiPlex / Ubuntu 24.04 LTS)
 
-Documentation technique et fichiers de configuration d'un wallboard de supervision : un écran mural affichant en continu, de façon totalement autonome, l'état de la supervision réseau via CheckMK.
+Documentation technique et fichiers de configuration d'un wallboard de supervision : un écran mural affichant en continu, de façon totalement autonome, l'état de la supervision réseau via le logiciel de monitoring CheckMK.
 
 > ℹ️ Les adresses IP présentées dans ce dépôt sont anonymisées (plage RFC 5737 — `203.0.113.0/24`) et ne correspondent pas aux valeurs réelles de l'infrastructure de production.
 
