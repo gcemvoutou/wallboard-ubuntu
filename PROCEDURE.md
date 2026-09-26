@@ -28,7 +28,7 @@ lsblk
 sudo wipefs -a /dev/sda
 ```
 
-⚠️ Cet effacement ne peut pas se faire depuis un système actuellement démarré sur ce même disque — il faut d'abord booter sur un support externe.
+⚠️ Cet effacement ne peut pas se faire depuis un système actuellement démarré sur ce même disque il faut d'abord booter sur un support externe.
 
 ### 2.3 Installation d'Ubuntu Desktop
 
@@ -118,7 +118,7 @@ systemctl --user enable chromium-wallboard.service
 
 ### 5.4. Connexion persistante au compte de supervision
 
-Plutôt que de préremplir un formulaire de connexion (méthode retirée des versions récentes de CheckMK pour des raisons de sécurité), une connexion manuelle unique est effectuée sur le compte dédié. La session reste active durablement — Chromium ne tournant pas en navigation privée, son profil est conservé entre les redémarrages.
+Plutôt que de préremplir un formulaire de connexion (méthode retirée des versions récentes de CheckMK pour des raisons de sécurité), une connexion manuelle unique est effectuée sur le compte dédié. La session reste active durablement Chromium ne tournant pas en navigation privée, son profil est conservé entre les redémarrages.
 
 ---
 
@@ -142,7 +142,7 @@ sudo ip addr del <ancienne-ip>/16 dev <interface>
 
 ## 7. Compte de supervision dédié
 
-Un compte CheckMK dédié (`kiosque`) a été créé avec un rôle en **lecture seule** — pas de droits d'administration, pour un poste affiché en continu dans un lieu de passage. Le délai d'inactivité de session est désactivé **uniquement pour ce compte** (réglage disponible par utilisateur dans CheckMK), sans toucher au délai global appliqué aux autres comptes.
+Un compte CheckMK dédié (`kiosque`) a été créé avec un rôle en **lecture seule** pas de droits d'administration, pour un poste affiché en continu dans un lieu de passage. Le délai d'inactivité de session est désactivé **uniquement pour ce compte** (réglage disponible par utilisateur dans CheckMK), sans toucher au délai global appliqué aux autres comptes.
 
 ---
 
@@ -153,17 +153,10 @@ Un compte CheckMK dédié (`kiosque`) a été créé avec un rôle en **lecture 
 * **Mémoire :** Limitation stricte de la RAM allouée via `MemoryMax=1.5G`, en prévention de toute dérive mémoire sur le long terme.
 * **Compte dédié :** Utilisateur `kiosque` restreint aux droits de lecture seule sur CheckMK.
 
----
-
-## 9. Résolution des Incidents (Troubleshooting)
-
-1. **Écran noir au démarrage :** Vérifier l'alimentation du mini-PC et s'assurer que la télévision est positionnée sur la bonne source. Si l'affichage VGA/HDMI saute (bande noire, image non centrée), éteindre et rallumer l'écran pour forcer une nouvelle lecture des données EDID par la carte graphique.
-2. **Page d'erreur réseau :** Vérifier le raccordement du câble Ethernet et redémarrer la machine si nécessaire.
-3. **Gel de l'affichage :** Systemd détecte l'arrêt ou le figement et relance Chromium automatiquement. En cas de blocage persistant, redémarrer le poste via SSH (`ssh checkmk-kiosk@203.0.113.38` puis `sudo reboot`).
 
 ---
 
-## 10. Recette finale
+## 9. Recette finale
 
 - [x] Démarrage entièrement autonome, sans intervention
 - [x] Affichage plein écran du dashboard, sans éléments d'interface visibles
