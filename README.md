@@ -68,4 +68,4 @@ Documentation technique et fichiers de configuration d'un wallboard de supervisi
 
 ## 🖼️ Résultat
 
-[À COMPLÉTER — photo finale du wallboard installé au bureau]
+<img src="./images/wallboard.jpeg" alt="Photo wallboard en prod" width="45%">
