@@ -68,4 +68,4 @@ Documentation technique et fichiers de configuration d'un wallboard de supervisi
 
 ##  Résultat
 
-<img src="./images/wallboard.jpeg" alt="Photo wallboard en prod" width="50%">
+<img src="./images/wallboard.jpeg" alt="Photo wallboard en prod" width="80%">
